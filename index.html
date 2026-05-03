@@ -1,66 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panun Athe</title>
-    <link
-       rel="stylesheet" 
-       href="./styles.css"
-    />   
+    <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Space+Mono:wght@400;700&family=Nunito:wght@400;600&display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
 
     <!-- Top Announcement Bar -->
-     <div class="top-bar">
+    <div class="top-bar">
         <p> Hook, loop, repeat — welcome to your new favorite place!</p>
-     </div>
+    </div>
 
-     <div class="logo">
+    <div class="logo">
         <img id="PA" src="./assests/images/PanunAtheLogo.png" alt="Panun Athe logo">
-     </div>
+    </div>
 
     <!-- Navigation Bar -->
     <header class="navbar">
 
-    <!-- Left Section (Search Bar) -->
-    <div class="nav-left">
-        <span class="search-icon"><i class="fa-solid fa-magnifying-glass search-icon"></i></span>
-        <input type="text" placeholder="Search crochet designs...">
-    </div>
+        <!-- Left Section (Search Bar) -->
+        <div class="nav-left">
+            <div class="search-box">
+                <span class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </span>
+                <input type="text" placeholder="Search crochet designs...">
+            </div>
+        </div>
 
-    <!-- Center Section -->
-    <div class="nav-center">
-        <a href="#">Home</a>
-        <a href="./about.html">About</a>
-        <a href="#">Create</a>
-        <a href="#">Discover</a>
-        <a href="#">Contact</a>
-    </div>
-    
-    <!-- Right Section -->
-    <div class="nav-right">
-         <button class="login-btn">Log in</button>
-         <button class="signup-btn">Sign up</button>
-    </div>
+        <!-- Center Section -->
+        <div class="nav-center">
+            <a href="#">Home</a>
+            <a href="./about.html">About</a>
+            <a href="#">Create</a>
+            <a href="#">Discover</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- Right Section -->
+        <div class="nav-right">
+            <button class="login-btn">Log in</button>
+            <button class="signup-btn">Sign up</button>
+        </div>
     </header>
 
     <main>
         <section class="hero">
+
             <h1>Where Handmade Meets Heart</h1>
             <p>A cozy space for crochet lovers to share and explore creativity.</p>
+
         </section>
 
+        <section class="why-section">
+
+            <p class="why-label">Why Panun Athe?</p>
+            <h2 class="why-title">Everything a maker needs,<br>all in one place.</h2>
+            <p class="why-subtitle">Whether you knit, crochet, weave, or embroider — Panun Athe is built for every kind of handmade creator and lover.</p>
+        
+            <div class="ticket-stack">
+                <div class="ticket">
+
+                    <!-- Ticket 01 -->
+                    <div class="ticket-stub">
+                        <span class="stub-num" style="color: var(--red);">01</span>
+                        <span class="stub-word">Portfolio</span>
+                    </div>
+                    <div class="ticket-body">
+                        <span class="ticket-tag" style="background: var(--peach); color: var(--red)">Your space</span>
+                        <div class="ticket-top-row">
+                            <div class="ticket-icon" style="background: var(--peach);">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#c96b5e" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="7" height="7" rx="1" />
+                                    <rect x="14" y="3" width="7" height="7" rx="1" />
+                                    <rect x="3" y="14" width="7" height="7" rx="1" />
+                                    <rect x="14" y="14" width="7" height="7" rx="1" />
+                                </svg>
+                            </div>
+                            <div class="ticket-name">Your own portfolio</div>
+                        </div>
+                        <p class="ticket-desc">Showcase your handmade work in a beautiful personal space. Let the world see what your hands are truly capable of.</p>
+                        <div class="ticket-footer">
+                            <div class="footer-dot" style="background: var(--orange);"></div>
+                            <span class="footer-text">Free for all makers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ticket 02 -->
+                <div class="ticket right">
+                    <div class="ticket-stub">
+                        <span class="stub-num" style="color: var(--orange);">02</span>
+                        <span class="stub-word">Patterns</span>
+                    </div>
+                    <div class="ticket-body">
+                        <span class="ticket-tag"
+                            style="background: var(--white); color: var(--orange); border: 1px solid var(--orange);">Earn
+                            income</span>
+                        <div class="ticket-top-row">
+                            <div class="ticket-icon" style="background: var(--white);">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#ff9376" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="9" y1="15" x2="15" y2="15" />
+                                    <line x1="12" y1="12" x2="12" y2="18" />
+                                </svg>
+                            </div>
+                            <div class="ticket-name">Sell your patterns</div>
+                        </div>
+                        <p class="ticket-desc">Turn your knowledge into income. Upload your patterns and earn every time someone buys — free or paid, your choice.</p>
+                        <div class="ticket-footer">
+                            <div class="footer-dot" style="background: var(--red);"></div>
+                            <span class="footer-text">Free & ; premium options</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ticket 03 -->
+                <div class="ticket plain">
+                    <div class="ticket-stub">
+                        <span class="stub-num" style="color: var(--red);">03</span>
+                        <span class="stub-word">Products</span>
+                    </div>
+                    <div class="ticket-body">
+                        <span class="ticket-tag" style="background: var(--peach); color: var(--red);">Sell
+                            handmade</span>
+                        <div class="ticket-top-row">
+                            <div class="ticket-icon" style="background: var(--peach);">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#c96b5e" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                                    <line x1="3" y1="6" x2="21" y2="6" />
+                                    <path d="M16 10a4 4 0 0 1-8 0" />
+                                </svg>
+                            </div>
+                            <div class="ticket-name">Sell your products</div>
+                        </div>
+                        <p class="ticket-desc">Have a finished piece you want to sell? List it directly on Panun Athe and connect with buyers who truly value handmade.</p>
+                        <div class="ticket-footer">
+                            <div class="footer-dot" style="background: var(--orange);"></div>
+                            <span class="footer-text">Direct to buyers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ticket 04 -->
+                <div class="ticket right">
+                    <div class="ticket-stub">
+                        <span class="stub-num" style="color: var(--orange);">04</span>
+                        <span class="stub-word">Discover</span>
+                    </div>
+                    <div class="ticket-body">
+                        <span class="ticket-tag"
+                            style="background: var(--white); color: var(--orange); border: 1px solid var(--orange);">One
+                            stop hub</span>
+                        <div class="ticket-top-row">
+                            <div class="ticket-icon" style="background: var(--white);">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#ff9376" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="9" cy="21" r="1" />
+                                    <circle cx="20" cy="21" r="1" />
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                                </svg>
+                            </div>
+                            <div class="ticket-name">Shop everything here</div>
+                        </div>
+                        <p class="ticket-desc">Discover patterns, finished products, and makers — all under one roof. No jumping between apps or websites anymore.</p>
+                        <div class="ticket-footer">
+                            <div class="footer-dot" style="background: var(--red);"></div>
+                            <span class="footer-text">Patterns · Products · Makers</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Closing -->
+            <div class="why-closing">
+                <div class="closing-bar"></div>
+                <p class="closing-text"><span>Panun Athe</span> — your one stop home for everything handmade.</p>
+            </div>
+
+        </section>
     </main>
 
     <footer>
-         <p class="footer-bottom">© 2026 Panun Athe | Made with ❤️</p>    
+        <p class="footer-bottom">© 2026 Panun Athe | Made with ❤️</p>
     </footer>
 
 
 </body>
+
 </html>
