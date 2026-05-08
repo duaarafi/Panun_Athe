@@ -199,7 +199,7 @@ body {
 
 /* ===== SECTION WRAPPER ===== */
 .why-section {
-    max-width: 860px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 5rem 2rem;
 }
@@ -207,7 +207,7 @@ body {
 
 .why-label {
     font-family: 'Space Mono', monospace;
-    font-size: 0.7rem;
+    font-size: 1.0rem;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--red);
@@ -224,10 +224,10 @@ body {
 }
 
 .why-subtitle {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     color: var(--text-mid);
     line-height: 1.75;
-    max-width: 500px;
+    max-width: 100%;
     margin-bottom: 2.8rem;
 }
 
@@ -262,7 +262,7 @@ body {
 
 /* ticket 03 uses light grey background */
 .ticket.plain {
-    background: var(--light-grey);
+    background: var(--white);
 }
 
 /* ===== STUB (numbered side) ===== */
@@ -308,14 +308,14 @@ body {
 .stub-num {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     font-weight: 700;
     line-height: 1;
 }
 
 .stub-word {
     font-family: 'Space Mono', monospace;
-    font-size: 0.52rem;
+    font-size: 0.75rem;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: var(--text-soft);
@@ -338,7 +338,7 @@ body {
 /* ===== TAG PILL ===== */
 .ticket-tag {
     font-family: 'Space Mono', monospace;
-    font-size: 0.58rem;
+    font-size: 0.9rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 3px 10px;
@@ -376,17 +376,17 @@ body {
 
 .ticket-name {
     font-family: 'Playfair Display', serif;
-    font-size: 1.05rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: var(--text-dark);
 }
 
 /* ===== DESCRIPTION ===== */
 .ticket-desc {
-    font-size: 0.83rem;
+    font-size: 1.1rem;
     color: var(--text-mid);
     line-height: 1.65;
-    max-width: 420px;
+    max-width: 100%;
 }
 
 .ticket.right .ticket-desc {
@@ -414,7 +414,7 @@ body {
 
 .footer-text {
     font-family: 'Space Mono', monospace;
-    font-size: 0.58rem;
+    font-size: 0.80rem;
     letter-spacing: 0.5px;
     color: var(--text-soft);
 }
@@ -423,7 +423,7 @@ body {
 .why-closing {
     margin-top: 2rem;
     padding: 1.1rem 1.5rem;
-    background: var(--peach);
+    background: var(--white);
     border-radius: 12px;
     border: 1.5px solid var(--mid-grey);
     display: flex;
