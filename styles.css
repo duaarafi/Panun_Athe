@@ -204,10 +204,10 @@ min-height: 100vh;
 display: flex;
 flex-direction: column;
 align-items: center;
-background-image: url("./assests/images/scrapbookbg.png");
+background-image: url("./assests/images/scrapbookbg\ \(15\).png");
 background-repeat: no-repeat;
-background-position: center-top;
-background-size: 100% auto;
+background-position: center center;
+background-size: cover;
 margin: 0 auto;
 padding: 5rem 2rem;
 
@@ -219,7 +219,7 @@ padding: 5rem 2rem;
     font-size: 1.0rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--red);
+    color: #FFEAD3;
     margin-bottom: 0.6rem;
 }
 
@@ -227,7 +227,7 @@ padding: 5rem 2rem;
     font-family: 'Playfair Display', serif;
     font-size: clamp(1.8rem, 4vw, 2.6rem);
     font-weight: 700;
-    color: var(--text-dark);
+    color: #FFEAD3;
     line-height: 1.2;
     margin-bottom: 0.6rem;
 }
