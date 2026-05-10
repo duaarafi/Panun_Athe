@@ -23,6 +23,8 @@ body {
     margin: 0;
     font-style: italic;
     color: #5a1a1a;
+    font-family: BodoniFlF-Italic, serif;
+    font-size: 18px;
 }
 
 /*logo*/
@@ -112,12 +114,25 @@ body {
 }
 
 /*buttons*/
-.login-btn {
+.login-btn, .hero>button {
     background-color: #ff9376;
-    color: white;
     border: none;
     padding: 8px 15px;
     border-radius: 20px;
+}
+
+.login-btn a, .hero>button a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Arapey-Regular', serif;
+    font-size: 16px;
+}
+
+.signup-btn a{
+    color: #5a1a1a;
+    text-decoration: none;
+    font-family: 'Arapey-Regular', serif;
+    font-size: 16px;
 }
 
 .signup-btn {
@@ -127,18 +142,16 @@ body {
     border-radius: 20px;
 }
 
-.login-btn,
-.signup-btn {
+.login-btn ,.signup-btn , .hero>button {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.login-btn,
-.signup-btn {
+.login-btn,.signup-btn, .hero>button {
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.login-btn:hover {
+.login-btn:hover,.hero>button:hover {
     background-color: #c4001d;
     transform: scale(1.05);
 }
@@ -160,20 +173,53 @@ body {
     position: relative;
 }
 
-.hero h1,
-.hero p {
+.hero h1, .hero p {
     position: relative;
     z-index: 1;
 }
 
+@font-face{
+    font-family: "Howell-Script";
+    src: url('./fonts/Howell-Script.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'BodoniFlF-Roman';
+    src: url('./fonts/BodoniFLF-Roman.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'BodoniFlF-Italic';
+    src: url('./fonts/BodoniFLF-Italic.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Arapey-Regular';
+    src: url('./fonts/Arapey-Regular.ttf') format('truetype');
+}
 .hero>h1 {
-    font-family: Gravitas One;
+    text-align: center;
+    font-size: 90px;
+    line-height: 1.1;
+    font-family: "Howell-Script";
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color:#c4001d;
+    -webkit-text-stroke: 0.01px #c96b5e
+    
 }
 
 .hero>p {
-    font-family: Cinzel;
-    font-weight: 580;
+    font-family:'BodoniFlF-Roman' , serif;
+    font-size: 29px;
     color: #5a1a1a;
+    margin-bottom: 21px;
+}
+
+.hero>button {
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 /* ROOT COLOURS */
@@ -187,14 +233,6 @@ body {
     --text-mid: #777777;
     --text-soft: #aaaaaa;
     --white: #ffffff;
-}
-
-/* PAGE */
-body {
-    font-family: 'Nunito', sans-serif;
-    background: var(--light-grey);
-    color: var(--text-dark);
-    min-height: 100vh;
 }
 
 /* ===== SECTION WRAPPER ===== */
@@ -224,16 +262,18 @@ padding: 5rem 2rem;
 }
 
 .why-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Howell-Script', cursive;
     font-size: clamp(1.8rem, 4vw, 2.6rem);
     font-weight: 700;
     color: #5a1a1a;
     line-height: 1.2;
     margin-bottom: 0.6rem;
+    text-align: center;
 }
 
 .why-subtitle {
-    font-size: 1.1rem;
+    font-family:'BodoniFlF-Roman' , serif;
+    font-size: 1.3rem;
     color: var(--text-mid);
     line-height: 1.75;
     max-width: 100%;
@@ -293,7 +333,7 @@ padding: 5rem 2rem;
 
 .ticket.right .ticket-stub {
     border-right: none;
-    border-left: 2px dashed var(--mid-grey);
+    border-left: 2px dashed #c96b5e;;
 }
 
 /* punched holes top and bottom of stub */
@@ -387,14 +427,15 @@ padding: 5rem 2rem;
 }
 
 .ticket-name {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Howell-Script', cursive;
     font-size: 1.7rem;
-    font-weight: 700;
+    font-weight: 599;
     color: var(--text-dark);
 }
 
 /* ===== DESCRIPTION ===== */
 .ticket-desc {
+    font-family:'BodoniFlF-Roman' , serif;
     font-size: 1.1rem;
     color: var(--text-mid);
     line-height: 1.65;
